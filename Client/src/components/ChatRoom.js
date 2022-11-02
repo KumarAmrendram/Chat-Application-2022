@@ -117,7 +117,7 @@ const ChatRoom = () => {
         connect();
     }
     return (
-    <div className="container">
+    <div className="container-fluid">
         {userData.connected?
         <div className="chat-box">
             <div className="member-list">
@@ -171,7 +171,7 @@ const ChatRoom = () => {
                 onChange={handleUsername}
                 margin="normal"
               />
-              <button type="button" onClick={registerUser}>
+              <button className='ms-1 btn btn-info' type="button" onClick={registerUser}>
                     connect
               </button> 
         </div>}
